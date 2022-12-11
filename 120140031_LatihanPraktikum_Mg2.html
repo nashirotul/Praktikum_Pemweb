@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Praktikum Minggu Kedua</title>
+</head>
+<style>
+    header{
+        background: rgb(3, 134, 173);
+        font-family: Arial, Helvetica, sans-serif;
+        image-resolution: maxwidth;
+        color: rgb(0, 0, 0);
+    }
+    h1{
+        font-size: 80px;
+        color: rgb(255, 255, 255);
+    }
+    h2{
+        color: rgb(255, 255, 255);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    h3{
+        width: 50%;
+        height: 40px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    h4{
+        width: 100%;
+        height: 35px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        display: flex;
+    }
+    p{
+        background-color: rgb(3, 134, 173);
+        color: black;
+        display: flex;
+        font-size: 18px;
+        float: left;
+        text-align: left;
+    }
+    img.right{
+        float: right;
+        margin: 5px;
+    }
+    img.kiri{
+        float: right;
+        margin: 5px;
+    }
+    .navigation{
+        font-size: 20px;
+        background-color: rgb(3, 134, 173);
+        text-align: right;
+        justify-content: right;
+    }
+    .about{
+        width: 55%;
+        height: 350px;
+        background-color: rgb(3, 134, 173);
+        display: flow-root;
+        float: left;
+    }
+    .video{
+        width: 40%;
+        height: 300px;
+        display: flex;
+        float: right;
+        align-items: center;
+    }
+    .tabel{
+        width: 90%;
+        height: 230px;
+        display: flow-root;
+        float: left;
+        border-color: rgb(3, 134, 173);
+    }
+    .lagu{
+        width: 60%;
+        height: 400px;
+        background-color: rgb(3, 134, 173);
+        display: flow-root;
+        float: left;
+        text-align: left;
+    }
+    .pertanyaan{
+        text-align: center;
+        width: 10%;
+        height: 50px;
+    }
+    .foot{
+        width: 100%;
+        height: 60px;
+        background-color: black;
+        color: rgb(3, 134, 173);
+        display: flow-root;
+        text-align: center;
+        align-items: center;
+    }
+    
+</style>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <img src="https://i.pinimg.com/originals/54/15/c4/5415c4bd52779d1119e8e1a0a27acaad.jpg" 
+                    width="510" height="300" alt=""></td>
+                <td>
+                    <h1>SMOOTHIE BOWL</h1>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <nav>
+        <div class="navigation">
+            <a href="#Deskripsi">Deskripsi</a>
+            <a href="#jenis">Jenis</a>
+            <a href="#foto">Foto </a>
+        </div>   
+    </nav>
+    <br>
+    <aside>
+        <div class="video">
+                <iframe width="550" height="300" src="Frooties promosi.mp4" title="Frooties, Bowl Of Healtiness" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </aside>
+    <main>
+        <div class="about">
+            <h3 id="Deskripsi">Deskripsi Smoothie Bowl</h3>
+                <p>Smoothie adalah minuman berbahan baku buah-buahan, sayuran, sirup gula/gula pasir, susu tawar cair dan es batu.
+                    Selain penambahan susu sebagai ciri khas smoothie, yoghurt, cokelat dan susu kental manis juga seringkali ditambahkan ke dalam smoothie.
+                    Tekstur smoothie lebih pekat dibandingkan jus.
+                </p>
+        </div>
+        <br>
+        <div class="tabel">
+            <h3 id="jenis">Variasi Olahan Smoothie Bowl</h3>
+                <table border="1">
+                    <tr style="background-color: rgb(3, 134, 173);">
+                        <th>No</th>
+                        <th>Variasi Olahan</th>
+                        <th>Ciri Khas</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Buah Naga x pisang</td>
+                        <td>Warna cenderung seperti buah naga namun tidak terlalu pekat, tekstur cair, namum tidak secair jus buah</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Strowbery x pisang</td>
+                        <td>Warna cenderung pink, tekstur cair, namun tidak secair jus buah</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Mangga x Pisang</td>
+                        <td>Warna kuning pudar, tekstur cair, namun tidak secair jus buah</td>
+                    </tr> 
+            </table>
+        </div>
+        <div class="lagu">
+            <h3 id="lagu">Foto Variasi Smoothie Bowl</h3>
+            <form>
+                <label for="search">Search :</label>
+                <input type="text" id="search" name="search" >
+            </form>
+            <h4>Apakah kalian ingin melihat resep dan variasi Smoothie Bowl</h4>
+            <form>
+                <input type="radio" id="belum" name="fav_belum" value="Belum">
+                <label for="belum">Ya</label>
+                <input type="radio" id="sudah" name="fav_sudah" value="Sudah">
+                <label for="Sudah">Lain waktu</label>
+           <h4>Variasi Olahan Smoothie Bowl</h4>
+                <input type="checkbox" name="Variasi" id="Buah Naga x Pisang" value="Buah Naga x Pisang">
+                <label for="anggora x anggora">Buah Naga x Pisang</label><br>
+                <input type="checkbox" name="Variasi" id="Srowbery x Pisang" value="Srowbery x Pisang">
+                <label for="anggora x persia">Strowbery x Pisang</label><br>
+                <input type="checkbox" name="Variasi" id="Mangga x Pisang" value="Mangga x Pisang">
+                <label for="anggora x kampung">Mangga x Pisang</label><br>  
+            </form>
+            <left>
+                <button type="button">Kirim</button>
+            </left>    
+        </div>
+    </main>
+    <br>
+    <footer>
+        <div class="foot">
+            <h3>FOR MORE INFORMATION SEARCH IN GOOGLE</h3>
+        </div>
+    </footer>
+</body>
+</html>
